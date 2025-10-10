@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Market Navigator - Vanilla JS</title>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Market Navigator</h1>
+                    <p>Interactive Stock Chart Dashboard</p>
+                </div>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="controls-panel">
+            <div class="panel-header">
+                <h2>Select Tickers</h2>
+                <div class="header-controls">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="adjustInflation">
+                        <span>Adjust for Inflation</span>
+                    </label>
+                    <button id="deselectAll" class="btn btn-secondary">Deselect All</button>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="reference-controls">
+                <button id="clearReference" class="btn btn-primary">Clear Reference Point</button>
+                <span id="referenceText" class="reference-text">Click any point on the chart to set it as reference for % change calculations</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <h3>ETFs & Indices</h3>
+            <div id="etfTickers" class="ticker-grid"></div>
+
+            <div class="divider"></div>
+            
+            <details class="individual-stocks">
+                <summary>Individual Stocks</summary>
+                <div id="stockTickers" class="ticker-grid"></div>
+            </details>
+
+            <div class="divider"></div>
+
+            <details class="macro-indicators">
+                <summary>Macro Economic Indicators</summary>
+                <div id="macroTickers" class="ticker-grid"></div>
+            </details>
+
+            <div id="selectedTickers" class="selected-tickers" style="display: none;">
+                <div class="divider"></div>
+                <div class="selected-panel">
+                    <h3>Selected Tickers & Measures</h3>
+                    <div id="selectedTickersList"></div>
+                    <div id="selectedMacroList"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="events-panel">
+            <details>
+                <summary>
+                    <span>Historical Events</span>
+                    <span id="eventCount" class="event-count"></span>
+                </summary>
+                <div class="events-content">
+                    <div class="events-header">
+                        <span>Toggle individual events on/off:</span>
+                        <div class="event-buttons">
+                            <button id="enableAllEvents" class="btn btn-success">Enable All</button>
+                            <button id="disableAllEvents" class="btn btn-danger">Disable All</button>
+                        </div>
+                    </div>
+                    <div id="eventsList" class="events-grid"></div>
+                </div>
+            </details>
+        </div>
+
+        <div class="chart-panel">
+            <div class="chart-header">
+                <h2>Price Chart</h2>
+                <div class="chart-controls">
+                    <button id="toggleEvents" class="btn btn-purple">Hide Events</button>
+                    <button id="toggleGrid" class="btn btn-blue">Hide Grid</button>
+                    <button id="resetZoom" class="btn btn-secondary">Reset Zoom</button>
+                </div>
+            </div>
+            <div id="chart" class="chart-container"></div>
+        </div>
+
+        <div id="macroChartPanel" class="chart-panel" style="display: none;">
+            <div class="chart-header">
+                <h2>Macro Economic Indicators</h2>
+                <div class="chart-controls">
+                    <button id="toggleMacroEvents" class="btn btn-purple">Hide Events</button>
+                    <button id="toggleMacroGrid" class="btn btn-blue">Hide Grid</button>
+                    <button id="resetMacroZoom" class="btn btn-secondary">Reset Zoom</button>
+                </div>
+            </div>
+            <div id="macroChart" class="chart-container"></div>
+        </div>
+
+        <div id="activeEvent" class="active-event" style="display: none;">
+            <h2 id="activeEventTitle"></h2>
+            <p id="activeEventDescription"></p>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "market-navigator-vanilla",
+  "version": "1.0.0",
+  "description": "Vanilla JavaScript version of Market Navigator stock chart dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js",
+    "deploy": "npm run build && echo 'Ready for Netlify deployment!'"
+  },
+  "keywords": ["stock", "chart", "dashboard", "plotly", "vanilla-js", "netlify"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/market-navigator-vanilla.git"
+  },
+  "homepage": "https://market-navigator-vanilla.netlify.app"
+}

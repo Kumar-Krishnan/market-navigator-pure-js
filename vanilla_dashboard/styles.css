@@ -1,0 +1,1050 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Custom Properties for theming */
+:root {
+    /* Light theme colors */
+    --bg-primary: #f9fafb;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f3f4f6;
+    --bg-selected: #f9fafb;
+    --bg-hover: #f9fafb;
+    
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-muted: #6b7280;
+    --text-disabled: #9ca3af;
+    
+    --border-primary: #e5e7eb;
+    --border-secondary: #d1d5db;
+    --border-tertiary: #f3f4f6;
+    
+    --shadow-primary: rgba(0, 0, 0, 0.05);
+    --shadow-secondary: rgba(0, 0, 0, 0.1);
+    
+    /* Button colors */
+    --btn-primary-bg: #3b82f6;
+    --btn-primary-border: #3b82f6;
+    --btn-primary-text: #ffffff;
+    --btn-primary-hover: #2563eb;
+    
+    --btn-secondary-bg: #f3f4f6;
+    --btn-secondary-border: #d1d5db;
+    --btn-secondary-text: #374151;
+    --btn-secondary-hover: #e5e7eb;
+    
+    --btn-success-bg: #dcfce7;
+    --btn-success-border: #bbf7d0;
+    --btn-success-text: #166534;
+    --btn-success-hover: #bbf7d0;
+    
+    --btn-danger-bg: #fef2f2;
+    --btn-danger-border: #fecaca;
+    --btn-danger-text: #dc2626;
+    --btn-danger-hover: #fecaca;
+    
+    --btn-purple-bg: #faf5ff;
+    --btn-purple-border: #e9d5ff;
+    --btn-purple-text: #7c3aed;
+    --btn-purple-hover: #f3e8ff;
+    --btn-purple-active: #7c3aed;
+    
+    --btn-blue-bg: #eff6ff;
+    --btn-blue-border: #dbeafe;
+    --btn-blue-text: #2563eb;
+    --btn-blue-hover: #dbeafe;
+    --btn-blue-active: #2563eb;
+}
+
+/* Dark theme colors */
+[data-theme="dark"] {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+    --bg-selected: #1e293b;
+    --bg-hover: #334155;
+    
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --text-disabled: #64748b;
+    
+    --border-primary: #334155;
+    --border-secondary: #475569;
+    --border-tertiary: #1e293b;
+    
+    --shadow-primary: rgba(0, 0, 0, 0.3);
+    --shadow-secondary: rgba(0, 0, 0, 0.5);
+    
+    /* Button colors for dark theme */
+    --btn-primary-bg: #3b82f6;
+    --btn-primary-border: #3b82f6;
+    --btn-primary-text: #ffffff;
+    --btn-primary-hover: #2563eb;
+    
+    --btn-secondary-bg: #334155;
+    --btn-secondary-border: #475569;
+    --btn-secondary-text: #cbd5e1;
+    --btn-secondary-hover: #475569;
+    
+    --btn-success-bg: #14532d;
+    --btn-success-border: #166534;
+    --btn-success-text: #bbf7d0;
+    --btn-success-hover: #166534;
+    
+    --btn-danger-bg: #7f1d1d;
+    --btn-danger-border: #991b1b;
+    --btn-danger-text: #fecaca;
+    --btn-danger-hover: #991b1b;
+    
+    --btn-purple-bg: #581c87;
+    --btn-purple-border: #6b21a8;
+    --btn-purple-text: #e9d5ff;
+    --btn-purple-hover: #6b21a8;
+    --btn-purple-active: #7c3aed;
+    
+    --btn-blue-bg: #1e3a8a;
+    --btn-blue-border: #1d4ed8;
+    --btn-blue-text: #dbeafe;
+    --btn-blue-hover: #1d4ed8;
+    --btn-blue-active: #2563eb;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.5;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.container {
+    max-width: 100%;
+    padding: 1.5rem;
+}
+
+/* Header */
+.header {
+    margin-bottom: 2rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.header h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+}
+
+/* Theme toggle */
+.theme-toggle {
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-primary);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+    box-shadow: 0 2px 4px var(--shadow-primary);
+}
+
+.theme-toggle:hover {
+    background: var(--bg-hover);
+    border-color: var(--border-secondary);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px var(--shadow-secondary);
+}
+
+.theme-toggle:focus {
+    outline: 2px solid var(--btn-primary-bg);
+    outline-offset: 2px;
+}
+
+.theme-icon {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .theme-icon {
+    transform: rotate(15deg);
+}
+
+/* Panel styles */
+.controls-panel,
+.events-panel,
+.chart-panel,
+.active-event {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 var(--shadow-primary);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.panel-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Divider */
+.divider {
+    border-top: 1px solid var(--border-tertiary);
+    margin: 1rem 0;
+}
+
+/* Reference controls */
+.reference-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.reference-text {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+/* Buttons */
+.btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    background: var(--bg-secondary);
+}
+
+.btn:focus {
+    outline: 2px solid var(--btn-primary-bg);
+    outline-offset: 1px;
+}
+
+.btn-primary {
+    background-color: var(--btn-primary-bg);
+    border-color: var(--btn-primary-border);
+    color: var(--btn-primary-text);
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-primary-hover);
+    border-color: var(--btn-primary-hover);
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary-bg);
+    border-color: var(--btn-secondary-border);
+    color: var(--btn-secondary-text);
+}
+
+.btn-secondary:hover {
+    background-color: var(--btn-secondary-hover);
+    border-color: var(--btn-secondary-border);
+}
+
+.btn-success {
+    background-color: var(--btn-success-bg);
+    border-color: var(--btn-success-border);
+    color: var(--btn-success-text);
+}
+
+.btn-success:hover {
+    background-color: var(--btn-success-hover);
+}
+
+.btn-danger {
+    background-color: var(--btn-danger-bg);
+    border-color: var(--btn-danger-border);
+    color: var(--btn-danger-text);
+}
+
+.btn-danger:hover {
+    background-color: var(--btn-danger-hover);
+}
+
+.btn-purple {
+    background-color: var(--btn-purple-bg);
+    border-color: var(--btn-purple-border);
+    color: var(--btn-purple-text);
+}
+
+.btn-purple:hover {
+    background-color: var(--btn-purple-hover);
+}
+
+.btn-purple.active {
+    background-color: var(--btn-purple-active);
+    color: white;
+}
+
+.btn-blue {
+    background-color: var(--btn-blue-bg);
+    border-color: var(--btn-blue-border);
+    color: var(--btn-blue-text);
+}
+
+.btn-blue:hover {
+    background-color: var(--btn-blue-hover);
+}
+
+.btn-blue.active {
+    background-color: var(--btn-blue-active);
+    color: white;
+}
+
+/* Checkbox styles */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--border-secondary);
+    background-color: var(--bg-secondary);
+    accent-color: var(--btn-primary-bg);
+}
+
+.checkbox-label span {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+/* Ticker grid */
+.ticker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.ticker-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid var(--border-primary);
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+    background-color: var(--bg-secondary);
+}
+
+.ticker-item:hover {
+    background-color: var(--bg-hover);
+}
+
+.ticker-item input[type="checkbox"] {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--border-secondary);
+    margin-right: 0.25rem;
+    background-color: var(--bg-secondary);
+    accent-color: var(--btn-primary-bg);
+}
+
+.ticker-info {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-left: 0.25rem;
+}
+
+.ticker-symbol {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.ticker-separator {
+    font-size: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.ticker-name {
+    font-size: 0.5rem;
+    color: var(--text-secondary);
+}
+
+/* Individual stocks */
+.individual-stocks summary {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    margin-bottom: 0.75rem;
+}
+
+.individual-stocks summary:hover {
+    color: var(--text-primary);
+}
+
+.individual-stocks[open] summary {
+    margin-bottom: 0.75rem;
+}
+
+/* Macro indicators */
+.macro-indicators summary {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    margin-bottom: 0.75rem;
+}
+
+.macro-indicators summary:hover {
+    color: var(--text-primary);
+}
+
+.macro-indicators[open] summary {
+    margin-bottom: 0.75rem;
+}
+
+/* Selected tickers */
+.selected-panel {
+    background-color: var(--bg-selected);
+    border: 1px solid var(--border-primary);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.selected-panel h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.selected-ticker-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.ticker-color-indicator {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.125rem;
+    border: 1px solid var(--border-secondary);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.ticker-description {
+    font-size: 0.875rem;
+}
+
+.ticker-description .ticker-name-bold {
+    font-weight: 600;
+}
+
+.ticker-description .description-text {
+    color: var(--text-secondary);
+}
+
+.loading {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Events */
+.events-panel details summary {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-count {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.events-content {
+    margin-top: 1rem;
+}
+
+.events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.events-header span {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.event-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.event-buttons .btn {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem;
+}
+
+.event-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.event-item:hover {
+    background-color: var(--bg-hover);
+}
+
+.event-item input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--border-secondary);
+    margin-top: 0.125rem;
+    background-color: var(--bg-secondary);
+    accent-color: var(--btn-primary-bg);
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.event-color-indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.125rem;
+    flex-shrink: 0;
+}
+
+.event-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.event-label.enabled {
+    color: var(--text-primary);
+}
+
+.event-label.disabled {
+    color: var(--text-muted);
+}
+
+.event-description {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.event-description.enabled {
+    color: var(--text-muted);
+}
+
+.event-description.disabled {
+    color: var(--text-disabled);
+}
+
+/* Chart */
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.chart-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.chart-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.chart-container {
+    width: 100%;
+    height: 80vh;
+}
+
+/* Active event */
+.active-event h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.active-event p {
+    color: var(--text-secondary);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .ticker-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    
+    .events-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0.75rem;
+    }
+    
+    /* Header improvements */
+    .header {
+        margin-bottom: 1.5rem;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .header h1 {
+        font-size: 1.75rem;
+        text-align: center;
+        margin-bottom: 0.25rem;
+    }
+    
+    .header p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    /* Theme toggle improvements */
+    .theme-toggle {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .theme-icon {
+        font-size: 1.125rem;
+    }
+    
+    /* Panel improvements */
+    .controls-panel,
+    .events-panel,
+    .chart-panel,
+    .active-event {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .panel-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    
+    .panel-header h2 {
+        font-size: 1.125rem;
+    }
+    
+    /* Button improvements for touch */
+    .btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+        min-height: 44px; /* iOS touch target minimum */
+        border-radius: 0.5rem;
+    }
+    
+    .header-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    
+    .header-controls .btn {
+        width: 100%;
+    }
+    
+    /* Reference controls */
+    .reference-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+    
+    .reference-controls .btn {
+        width: 100%;
+    }
+    
+    .reference-text {
+        font-size: 0.8125rem;
+        text-align: center;
+        padding: 0.5rem;
+        background: var(--bg-tertiary);
+        border-radius: 0.375rem;
+        border: 1px solid var(--border-primary);
+    }
+    
+    /* Ticker grid improvements */
+    .ticker-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .ticker-item {
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+    }
+    
+    .ticker-item input[type="checkbox"] {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.5rem;
+    }
+    
+    .ticker-symbol {
+        font-size: 0.875rem;
+        font-weight: 700;
+    }
+    
+    .ticker-name {
+        font-size: 0.75rem;
+    }
+    
+    /* Chart improvements */
+    .chart-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    
+    .chart-header h2 {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+    
+    .chart-controls {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.5rem;
+    }
+    
+    .chart-controls .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .chart-container {
+        height: 50vh;
+        min-height: 300px;
+    }
+    
+    /* Events improvements */
+    .events-panel details summary {
+        font-size: 1.125rem;
+        padding: 0.5rem 0;
+    }
+    
+    .events-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+    
+    .events-header span {
+        text-align: center;
+        font-size: 0.875rem;
+    }
+    
+    .event-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    
+    .event-buttons .btn {
+        font-size: 0.8125rem;
+        padding: 0.5rem;
+        width: 100%;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .event-item {
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--border-primary);
+    }
+    
+    .event-item input[type="checkbox"] {
+        width: 1.125rem;
+        height: 1.125rem;
+        margin-top: 0;
+    }
+    
+    .event-label {
+        font-size: 0.9375rem;
+        font-weight: 600;
+    }
+    
+    .event-description {
+        font-size: 0.8125rem;
+        margin-top: 0.375rem;
+        line-height: 1.4;
+    }
+    
+    /* Selected tickers improvements */
+    .selected-panel {
+        padding: 0.75rem;
+    }
+    
+    .selected-ticker-item {
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--border-tertiary);
+    }
+    
+    .selected-ticker-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .ticker-color-indicator {
+        width: 1.125rem;
+        height: 1.125rem;
+        margin-top: 0.125rem;
+    }
+    
+    .ticker-description {
+        font-size: 0.875rem;
+        line-height: 1.4;
+    }
+    
+    /* Checkbox improvements */
+    .checkbox-label {
+        gap: 0.75rem;
+        padding: 0.25rem 0;
+    }
+    
+    .checkbox-label input[type="checkbox"] {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+    
+    .checkbox-label span {
+        font-size: 0.9375rem;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header p {
+        font-size: 0.9375rem;
+    }
+    
+    .controls-panel,
+    .events-panel,
+    .chart-panel,
+    .active-event {
+        padding: 0.75rem;
+    }
+    
+    .chart-container {
+        height: 45vh;
+        min-height: 280px;
+    }
+    
+    .btn {
+        padding: 0.625rem 0.875rem;
+        font-size: 0.8125rem;
+    }
+    
+    .ticker-item,
+    .event-item {
+        padding: 0.625rem;
+    }
+    
+    .chart-controls {
+        grid-template-columns: 1fr;
+        gap: 0.375rem;
+    }
+    
+    .reference-text {
+        font-size: 0.75rem;
+        padding: 0.625rem;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .chart-container {
+        height: 70vh;
+        min-height: 250px;
+    }
+    
+    .header {
+        margin-bottom: 1rem;
+    }
+    
+    .controls-panel,
+    .events-panel,
+    .chart-panel {
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Mobile-specific utility classes */
+.mobile-scroll {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+/* Improve touch targets */
+button, 
+input[type="checkbox"], 
+label, 
+.ticker-item, 
+.event-item,
+details summary {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Prevent text selection on interactive elements */
+.btn,
+.ticker-item,
+.event-item,
+.theme-toggle,
+details summary {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Improve focus states for accessibility */
+@media (max-width: 768px) {
+    button:focus,
+    input:focus,
+    details summary:focus {
+        outline: 2px solid var(--btn-primary-bg);
+        outline-offset: 2px;
+    }
+    
+    /* Better visual feedback for touch */
+    .btn:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+    
+    .ticker-item:active,
+    .event-item:active {
+        background-color: var(--bg-hover);
+        transform: scale(0.99);
+        transition: all 0.1s ease;
+    }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .ticker-color-indicator,
+    .event-color-indicator {
+        border-width: 0.5px;
+    }
+}
