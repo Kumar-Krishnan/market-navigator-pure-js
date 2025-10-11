@@ -2,6 +2,10 @@
 
 import { writeFile, mkdir } from 'fs/promises';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Get API key from environment variable
 const API_KEY = process.env.FRED_API_KEY;
@@ -23,7 +27,7 @@ export default async function retrieveUSTyields() {
   }
   
   // Ensure directory exists
-  const outputDir = './data/fredData';
+  const outputDir = path.join(__dirname, '..', 'data', 'fredData');
   await mkdir(outputDir, { recursive: true });
   
   try {
@@ -34,7 +38,8 @@ export default async function retrieveUSTyields() {
 
     console.log(`📈 ${SERIES_ID} - Saving ${data.observations.length} entries to UST10Y.json...`);
 
-    await writeFile('./data/fredData/UST10Y.json', JSON.stringify(data, null, 2), 'utf8');
+    const filePath = path.join(__dirname, '..', 'data', 'fredData', 'UST10Y.json');
+    await writeFile(filePath, JSON.stringify(data, null, 2), 'utf8');
 
     console.log('✅ Data saved to UST10Y.json');
   } catch (err) {

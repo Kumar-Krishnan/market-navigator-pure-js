@@ -1,11 +1,15 @@
 import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Get API key from environment variable
 const API_KEY = process.env.FRED_API_KEY;
 const SERIES_ID = 'CPIAUCSL';
-const DATA_FILE = './data/consumer-price-index/cpi_data.json';
+const DATA_FILE = path.join(__dirname, '..', 'data', 'consumer-price-index', 'cpi_data.json');
 
 // Ensure directory exists
 const ensureDirectoryExists = (filePath) => {
