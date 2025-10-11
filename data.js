@@ -1,10 +1,14 @@
 // Configuration and data for the Market Navigator app
 
-// Available tickers
-const availableTickers = ['SPY', 'QQQ', 'DIA', 'IWM', 'VT', 'VTI', 'XLF', 'XLK', 'XLV',
-    'XLE', 'XLY', 'XLI', 'XLRE', 'XLC', 'XLU', 'XLB', '^VIX', 'DX-Y.NYB'].sort();
+// Available tickers (ETFs and Indices)
+const availableTickers = ['SPY', 'QQQ', 'DIA', 'IWM', 'VT', 'VTI', 'VEU', 'VWO', 'XLF', 'XLK', 'XLV',
+    'XLE', 'XLY', 'XLI', 'XLRE', 'XLC', 'XLU', 'XLB', '^VIX', '^HSI', 'DX-Y.NYB', 'GLD'].sort();
 
-const individualStocks = ['MSFT', 'AAPL', 'COST', 'KO', 'ABBV', 'GIS', 'DUK', 'XYZ', 'SAP'].sort();
+const individualStocks = ['MSFT', 'AAPL', 'COST', 'KO', 'ABBV', 'GIS', 'DUK', 'XYZ', 'SAP',
+    'BRK-B', 'TSLA', 'RNMBY', 'THLEF', 'EADSY', 'DUOL', 'SE', 'PLTR', 'BYDDF', 'LI',
+    'CRM', 'AMD', 'WMT', 'NEE', 'KNSL', 'BWXT', 'FSLR', 'IONQ', 'CART', 'SOUN', 'SMR',
+    'OKLO', 'MP', 'PATH', 'CRSP', 'RKLB', 'IBM', 'INTC', 'GOOG', 'QS', 'TSM', 'PSTG',
+    'RGTI', 'BEAM', 'QCOM', 'NEM', 'NUE', 'UURAF'].sort();
 
 // Macro economic indicators
 const macroIndicators = ['UST10Y', 'FEDFUNDS', 'UNRATE', 'CPIAUCSL', 'PSAVERT', 'GDP', 'M2SL', 'MEHOINUSA672N'].sort();
@@ -28,8 +32,13 @@ const tickerColors = {
     XLU: '#c7c7c7',      // Light Gray
     XLB: '#dbdb8d',      // Light Olive
     '^VIX': '#ff6b6b',   // Bright Red
+    '^HSI': '#dc143c',   // Crimson (Hong Kong)
     'DX-Y.NYB': '#4ecdc4', // Teal
     'UST10Y': '#45b7d1',   // Sky Blue
+    GLD: '#ffd700',      // Gold
+    VEU: '#9b59b6',      // Purple (International)
+    VWO: '#e67e22',      // Orange (Emerging Markets)
+    'BRK-B': '#003f87',  // Berkshire Blue
     MSFT: '#00a2ed',     // Microsoft Blue
     AAPL: '#007aff',     // Apple Blue
     COST: '#e31837',     // Costco Red
@@ -39,6 +48,43 @@ const tickerColors = {
     DUK: '#005eb8',      // Duke Energy Blue
     XYZ: '#6c757d',      // Neutral Gray
     SAP: '#0f7db8',      // SAP Blue
+    TSLA: '#cc0000',     // Tesla Red
+    GOOG: '#4285f4',     // Google Blue
+    AMD: '#ed1c24',      // AMD Red
+    CRM: '#00a1e0',      // Salesforce Blue
+    WMT: '#0071ce',      // Walmart Blue
+    NEE: '#00aeef',      // NextEra Blue
+    IBM: '#054ada',      // IBM Blue
+    INTC: '#0071c5',     // Intel Blue
+    TSM: '#ff6b35',      // TSMC Orange
+    QCOM: '#3253dc',     // Qualcomm Blue
+    NEM: '#c9a227',      // Newmont Gold
+    NUE: '#005eb8',      // Nucor Blue
+    PLTR: '#101010',     // Palantir Black
+    SE: '#ee4d2d',       // Sea Orange
+    LI: '#00bfff',       // Li Auto Blue
+    DUOL: '#58cc02',     // Duolingo Green
+    FSLR: '#0095da',     // First Solar Blue
+    IONQ: '#6200ea',     // IonQ Purple
+    RKLB: '#ff6b35',     // Rocket Lab Orange
+    SMR: '#2ecc71',      // SMR Green
+    OKLO: '#27ae60',     // Oklo Green
+    MP: '#95a5a6',       // MP Materials Gray
+    KNSL: '#e74c3c',     // Kensol Red
+    BWXT: '#34495e',     // BWX Gray
+    CART: '#9b59b6',     // Cart Purple
+    SOUN: '#3498db',     // SoundHound Blue
+    PATH: '#e67e22',     // UiPath Orange
+    CRSP: '#16a085',     // CRISPR Teal
+    QS: '#8e44ad',       // QuantumScape Purple
+    PSTG: '#2980b9',     // Pure Storage Blue
+    RGTI: '#9c27b0',     // Rigetti Purple
+    BEAM: '#00bcd4',     // Beam Cyan
+    RNMBY: '#1e3799',    // Renault Blue
+    THLEF: '#2c3e50',    // Thales Gray
+    EADSY: '#34495e',    // Airbus Gray
+    BYDDF: '#e74c3c',    // BYD Red
+    UURAF: '#f39c12',    // Uranium Yellow
     // Macro indicators
     FEDFUNDS: '#dc3545',   // Fed Red
     UNRATE: '#ffc107',     // Unemployment Yellow
@@ -75,8 +121,50 @@ const tickerInfo = {
     GIS: 'General Mills, Inc. — food processing company.',
     DUK: 'Duke Energy Corporation — electric power and natural gas company.',
     '^VIX': 'CBOE Volatility Index — measures market volatility and investor sentiment.',
+    '^HSI': 'Hang Seng Index — Hong Kong stock market benchmark index.',
     'DX-Y.NYB': 'U.S. Dollar Index — measures the value of the U.S. dollar relative to a basket of foreign currencies.',
     'UST10Y': '10-Year U.S. Treasury Yield — benchmark interest rate for long-term U.S. government debt.',
+    GLD: 'SPDR Gold Shares — gold bullion ETF.',
+    VEU: 'Vanguard FTSE All-World ex-US ETF — international stocks excluding U.S.',
+    VWO: 'Vanguard FTSE Emerging Markets ETF — emerging market stocks.',
+    'BRK-B': 'Berkshire Hathaway Inc. Class B — Warren Buffett\'s conglomerate.',
+    TSLA: 'Tesla Inc. — electric vehicles and clean energy company.',
+    GOOG: 'Alphabet Inc. (Google) — technology and internet services company.',
+    AMD: 'Advanced Micro Devices — semiconductor and processor company.',
+    CRM: 'Salesforce Inc. — cloud-based CRM software company.',
+    WMT: 'Walmart Inc. — multinational retail corporation.',
+    NEE: 'NextEra Energy — renewable energy and electric utility company.',
+    IBM: 'IBM Corporation — technology and consulting company.',
+    INTC: 'Intel Corporation — semiconductor chip manufacturer.',
+    TSM: 'Taiwan Semiconductor Manufacturing — world\'s largest semiconductor foundry.',
+    QCOM: 'Qualcomm Inc. — wireless technology and semiconductor company.',
+    NEM: 'Newmont Corporation — gold mining company.',
+    NUE: 'Nucor Corporation — steel production company.',
+    PLTR: 'Palantir Technologies — big data analytics and AI software company.',
+    SE: 'Sea Limited — Southeast Asian technology conglomerate (gaming, e-commerce, fintech).',
+    LI: 'Li Auto Inc. — Chinese electric vehicle manufacturer.',
+    DUOL: 'Duolingo Inc. — language learning platform.',
+    FSLR: 'First Solar Inc. — solar panel manufacturing company.',
+    IONQ: 'IonQ Inc. — quantum computing company.',
+    RKLB: 'Rocket Lab USA — aerospace and launch services company.',
+    SMR: 'NuScale Power — small modular nuclear reactor company.',
+    OKLO: 'Oklo Inc. — advanced fission power company.',
+    MP: 'MP Materials — rare earth mining and processing company.',
+    KNSL: 'Kansai Electric Power — Japanese electric utility company.',
+    BWXT: 'BWX Technologies — nuclear components and fuel company.',
+    CART: 'Maplebear (Instacart) — grocery delivery and technology company.',
+    SOUN: 'SoundHound AI — voice AI and conversational intelligence company.',
+    PATH: 'UiPath Inc. — robotic process automation software company.',
+    CRSP: 'CRISPR Therapeutics — gene editing biotechnology company.',
+    QS: 'QuantumScape — solid-state battery technology company.',
+    PSTG: 'Pure Storage — data storage solutions company.',
+    RGTI: 'Rigetti Computing — quantum computing company.',
+    BEAM: 'Beam Therapeutics — gene editing biotechnology company.',
+    RNMBY: 'Renault SA ADR — French automotive manufacturer.',
+    THLEF: 'Thales SA ADR — French aerospace and defense company.',
+    EADSY: 'Airbus SE ADR — European aerospace and aviation company.',
+    BYDDF: 'BYD Company — Chinese electric vehicle and battery manufacturer.',
+    UURAF: 'Uran Energy — uranium mining company.',
     'FEDFUNDS': 'Federal Funds Rate — the interest rate at which banks lend to each other overnight.',
     'UNRATE': 'Unemployment Rate — percentage of labor force that is unemployed and actively seeking employment.',
     'CPIAUCSL': 'Consumer Price Index — measures inflation by tracking price changes in consumer goods and services.',
@@ -94,6 +182,9 @@ const tickerShortNames = {
     IWM: 'Russell 2000',
     VT: 'Global Stocks',
     VTI: 'Total US Market',
+    VEU: 'Intl ex-US',
+    VWO: 'Emerging Mkts',
+    GLD: 'Gold',
     XLF: 'Financials',
     XLK: 'Technology',
     XLV: 'Healthcare',
@@ -105,7 +196,46 @@ const tickerShortNames = {
     XLU: 'Utilities',
     XLB: 'Materials',
     '^VIX': 'Volatility',
+    '^HSI': 'Hang Seng',
     'DX-Y.NYB': 'Dollar Index',
+    'BRK-B': 'Berkshire',
+    TSLA: 'Tesla',
+    GOOG: 'Google',
+    AMD: 'AMD',
+    CRM: 'Salesforce',
+    WMT: 'Walmart',
+    NEE: 'NextEra',
+    IBM: 'IBM',
+    INTC: 'Intel',
+    TSM: 'TSMC',
+    QCOM: 'Qualcomm',
+    NEM: 'Newmont',
+    NUE: 'Nucor',
+    PLTR: 'Palantir',
+    SE: 'Sea Ltd',
+    LI: 'Li Auto',
+    DUOL: 'Duolingo',
+    FSLR: 'First Solar',
+    IONQ: 'IonQ',
+    RKLB: 'Rocket Lab',
+    SMR: 'NuScale',
+    OKLO: 'Oklo',
+    MP: 'MP Materials',
+    KNSL: 'Kansai',
+    BWXT: 'BWX Tech',
+    CART: 'Instacart',
+    SOUN: 'SoundHound',
+    PATH: 'UiPath',
+    CRSP: 'CRISPR',
+    QS: 'QuantumScape',
+    PSTG: 'Pure Storage',
+    RGTI: 'Rigetti',
+    BEAM: 'Beam Therapeutics',
+    RNMBY: 'Renault',
+    THLEF: 'Thales',
+    EADSY: 'Airbus',
+    BYDDF: 'BYD',
+    UURAF: 'Uran Energy',
     'UST10Y': '10Y Treasury',
     'FEDFUNDS': 'Fed Funds Rate',
     'UNRATE': 'Unemployment',
