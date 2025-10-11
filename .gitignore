@@ -96,3 +96,5 @@ logs
 # Build artifacts (keep deploy-info.json for debugging)
 # deploy-info.json
 
+# Data scripts are now included in the repo for GitHub Actions
+# data_scripts/

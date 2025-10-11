@@ -1,0 +1,21 @@
+{
+  "name": "market-navigator-data-scripts",
+  "version": "1.0.0",
+  "description": "Data update scripts for Market Navigator dashboard",
+  "type": "module",
+  "main": "main.mjs",
+  "scripts": {
+    "update": "node main.mjs",
+    "test": "node main.mjs"
+  },
+  "dependencies": {
+    "yahoo-finance2": "^2.8.0",
+    "axios": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["stock", "data", "yahoo-finance", "fred", "automation"],
+  "author": "",
+  "license": "MIT"
+}

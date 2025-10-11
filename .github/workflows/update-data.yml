@@ -1,0 +1,60 @@
+name: Daily Data Update
+
+on:
+  schedule:
+    # Run every day at 6 AM UTC (adjust timezone as needed)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: 'data_scripts/package-lock.json'
+    
+    - name: Install dependencies
+      working-directory: ./data_scripts
+      run: npm ci
+    
+    - name: Update stock data
+      working-directory: ./data_scripts
+      env:
+        FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      run: |
+        echo "🔄 Starting daily data update..."
+        node main.mjs
+    
+    - name: Check for changes
+      id: check-changes
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changes=true" >> $GITHUB_OUTPUT
+        else
+          echo "changes=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Commit and push changes
+      if: steps.check-changes.outputs.changes == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "🤖 Auto-update data: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+        git push
+    
+    - name: Trigger Netlify rebuild
+      if: steps.check-changes.outputs.changes == 'true'
+      run: |
+        echo "🚀 Data updated! Netlify will automatically rebuild the site."
+        echo "📊 Updated data will be available at your Netlify URL shortly."
