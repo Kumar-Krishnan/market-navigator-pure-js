@@ -24,6 +24,11 @@ async function loadSummary() {
   return [];
 }
 
+// Helper function to add delay between requests
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function getDateRange(ticker, lastKnownDate = null) {
   try {
     console.log(`📡 Fetching ${ticker}...`);
@@ -95,6 +100,8 @@ export default async function getTickerDateRange() {
           // Keep existing data if fetch failed
           results.push(existingData);
         }
+        // Add delay between requests to avoid rate limiting
+        await delay(500);
       } else {
         console.log(`⏩ Skipping ${ticker} — already updated today.`);
         results.push(existingData);
@@ -103,6 +110,8 @@ export default async function getTickerDateRange() {
       // This is a new ticker
       const data = await getDateRange(ticker);
       if (data) results.push(data);
+      // Add delay between requests to avoid rate limiting
+      await delay(500);
     }
   }
 

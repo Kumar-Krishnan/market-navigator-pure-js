@@ -8,6 +8,11 @@ const __dirname = path.dirname(__filename);
 const dataDir = path.join(`${__dirname}/../data`, 'tickers');
 const rangesFile = path.join(__dirname, 'tickers-oldest-available-dates', 'ranges-summary.json');
 
+// Helper function to add delay between requests
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function fileExists(filePath) {
   try {
     await access(filePath);
@@ -145,11 +150,15 @@ export default async function getHistorical() {
           console.log(`🔄 Downloading complete history for ${ticker}...`);
           await downloadHistorical(ticker, firstDate);
         }
+        // Add delay between requests to avoid rate limiting
+        await delay(500);
       } else {
         console.log(`⏩ Skipping ${ticker} — already up to date.`);
       }
     } else {
       await downloadHistorical(ticker, firstDate);
+      // Add delay between requests to avoid rate limiting
+      await delay(500);
     }
   }
 

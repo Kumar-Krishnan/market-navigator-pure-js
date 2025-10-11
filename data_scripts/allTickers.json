@@ -6,4 +6,9 @@
 "XLRE",
 "XLC",
 "XLU",
-"XLB", "COST", "KO", "ABBV", "GIS", "DUK", "^VIX", "DX-Y.NYB", "XYZ"]
+"XLB", "COST", "KO", "ABBV", "GIS", "DUK", "^VIX", "DX-Y.NYB", "XYZ",
+"BRK-B", "^HSI", "VEU", "VWO", "GLD", "TSLA", "RNMBY", "THLEF", "EADSY", "DUOL",
+"SE", "PLTR", "BYDDF", "LI", "CRM", "AMD", "WMT", "NEE", "KNSL", "BWXT",
+"FSLR", "IONQ", "CART", "SOUN", "SMR", "OKLO", "MP", "PATH", "CRSP", "RKLB",
+"IBM", "INTC", "GOOG", "QS", "TSM", "PSTG", "RGTI", "BEAM", "QCOM", "NEM",
+"NUE", "UURAF"]
