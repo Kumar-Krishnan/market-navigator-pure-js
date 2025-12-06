@@ -2,484 +2,484 @@
   {
     "ticker": "SPY",
     "firstDate": "1993-01-29",
-    "lastDate": "2025-12-04",
-    "totalDays": 8270,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 8271,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "QQQ",
     "firstDate": "1999-03-10",
-    "lastDate": "2025-12-04",
-    "totalDays": 6728,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 6729,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "IWM",
     "firstDate": "2000-05-26",
-    "lastDate": "2025-12-04",
-    "totalDays": 6420,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 6421,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "DIA",
     "firstDate": "1998-01-20",
-    "lastDate": "2025-12-04",
-    "totalDays": 7014,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 7015,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "VT",
     "firstDate": "2008-06-26",
-    "lastDate": "2025-12-04",
-    "totalDays": 4389,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 4390,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "VTI",
     "firstDate": "2001-06-15",
-    "lastDate": "2025-12-04",
-    "totalDays": 6155,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 6156,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "XLF",
     "firstDate": "1998-12-22",
-    "lastDate": "2025-12-04",
-    "totalDays": 6780,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 6781,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "XLK",
     "firstDate": "1998-12-22",
-    "lastDate": "2025-12-04",
-    "totalDays": 6780,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 6781,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "AAPL",
     "firstDate": "1980-12-12",
-    "lastDate": "2025-12-04",
-    "totalDays": 11337,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 11338,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "MSFT",
     "firstDate": "1986-03-13",
-    "lastDate": "2025-12-04",
-    "totalDays": 10011,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 10012,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "SAP",
     "firstDate": "1995-09-18",
-    "lastDate": "2025-12-04",
-    "totalDays": 7605,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 7606,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "XLV",
     "firstDate": "1998-12-22",
-    "lastDate": "2025-12-04",
-    "totalDays": 6780,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 6781,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "XLE",
     "firstDate": "1998-12-22",
-    "lastDate": "2025-12-04",
-    "totalDays": 6780,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 6781,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "XLY",
     "firstDate": "1998-12-22",
-    "lastDate": "2025-12-04",
-    "totalDays": 6780,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 6781,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "XLI",
     "firstDate": "1998-12-22",
-    "lastDate": "2025-12-04",
-    "totalDays": 6780,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 6781,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "XLRE",
     "firstDate": "2015-10-08",
-    "lastDate": "2025-12-04",
-    "totalDays": 2555,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 2556,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "XLC",
     "firstDate": "2018-06-19",
-    "lastDate": "2025-12-04",
-    "totalDays": 1877,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1878,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "XLU",
     "firstDate": "1998-12-22",
-    "lastDate": "2025-12-04",
-    "totalDays": 6780,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 6781,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "XLB",
     "firstDate": "1998-12-22",
-    "lastDate": "2025-12-04",
-    "totalDays": 6780,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 6781,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "COST",
     "firstDate": "1986-07-09",
-    "lastDate": "2025-12-04",
-    "totalDays": 9930,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 9931,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "KO",
     "firstDate": "1980-01-02",
-    "lastDate": "2025-12-04",
-    "totalDays": 11577,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 11578,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "ABBV",
     "firstDate": "2013-01-02",
-    "lastDate": "2025-12-04",
-    "totalDays": 3252,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 3253,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "GIS",
     "firstDate": "1980-03-17",
-    "lastDate": "2025-12-04",
-    "totalDays": 11525,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 11526,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "DUK",
     "firstDate": "1980-03-17",
-    "lastDate": "2025-12-04",
-    "totalDays": 11525,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 11526,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "^VIX",
     "firstDate": "1990-01-02",
-    "lastDate": "2025-12-04",
-    "totalDays": 9049,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 9050,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "DX-Y.NYB",
     "firstDate": "1980-01-02",
     "lastDate": "2025-12-05",
     "totalDays": 11707,
-    "updated": "2025-12-05"
+    "updated": "2025-12-06"
   },
   {
     "ticker": "XYZ",
     "firstDate": "2015-11-19",
-    "lastDate": "2025-12-04",
-    "totalDays": 2525,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 2526,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "BRK-B",
     "firstDate": "1996-05-09",
-    "lastDate": "2025-12-04",
-    "totalDays": 7442,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 7443,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "^HSI",
     "firstDate": "1986-12-31",
     "lastDate": "2025-12-05",
     "totalDays": 9610,
-    "updated": "2025-12-05"
+    "updated": "2025-12-06"
   },
   {
     "ticker": "VEU",
     "firstDate": "2007-03-08",
-    "lastDate": "2025-12-04",
-    "totalDays": 4718,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 4719,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "VWO",
     "firstDate": "2005-03-10",
-    "lastDate": "2025-12-04",
-    "totalDays": 5219,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 5220,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "GLD",
     "firstDate": "2004-11-18",
-    "lastDate": "2025-12-04",
-    "totalDays": 5295,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 5296,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "TSLA",
     "firstDate": "2010-06-29",
-    "lastDate": "2025-12-04",
-    "totalDays": 3884,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 3885,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "RNMBY",
     "firstDate": "2012-11-26",
-    "lastDate": "2025-12-04",
-    "totalDays": 3277,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 3278,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "THLEF",
     "firstDate": "2005-10-28",
-    "lastDate": "2025-12-04",
-    "totalDays": 5057,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 5058,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "EADSY",
     "firstDate": "2007-01-09",
-    "lastDate": "2025-12-04",
-    "totalDays": 4758,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 4759,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "DUOL",
     "firstDate": "2021-07-28",
-    "lastDate": "2025-12-04",
-    "totalDays": 1095,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1096,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "SE",
     "firstDate": "2017-10-20",
-    "lastDate": "2025-12-04",
-    "totalDays": 2042,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 2043,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "PLTR",
     "firstDate": "2020-09-30",
-    "lastDate": "2025-12-04",
-    "totalDays": 1302,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1303,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "BYDDF",
     "firstDate": "2009-02-13",
-    "lastDate": "2025-12-04",
-    "totalDays": 4229,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 4230,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "LI",
     "firstDate": "2020-07-30",
-    "lastDate": "2025-12-04",
-    "totalDays": 1345,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1346,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "CRM",
     "firstDate": "2004-06-23",
-    "lastDate": "2025-12-04",
-    "totalDays": 5399,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 5400,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "AMD",
     "firstDate": "1980-03-17",
-    "lastDate": "2025-12-04",
-    "totalDays": 11525,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 11526,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "WMT",
     "firstDate": "1980-01-02",
-    "lastDate": "2025-12-04",
-    "totalDays": 11577,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 11578,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "NEE",
     "firstDate": "1980-01-02",
-    "lastDate": "2025-12-04",
-    "totalDays": 11577,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 11578,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "KNSL",
     "firstDate": "2016-07-28",
-    "lastDate": "2025-12-04",
-    "totalDays": 2353,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 2354,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "BWXT",
     "firstDate": "2010-08-02",
-    "lastDate": "2025-12-04",
-    "totalDays": 3861,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 3862,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "FSLR",
     "firstDate": "2006-11-17",
-    "lastDate": "2025-12-04",
-    "totalDays": 4791,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 4792,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "IONQ",
     "firstDate": "2021-01-04",
-    "lastDate": "2025-12-04",
-    "totalDays": 1237,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1238,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "CART",
     "firstDate": "2023-09-19",
-    "lastDate": "2025-12-04",
-    "totalDays": 556,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 557,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "SOUN",
     "firstDate": "2022-04-28",
-    "lastDate": "2025-12-04",
-    "totalDays": 905,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 906,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "SMR",
     "firstDate": "2022-03-01",
-    "lastDate": "2025-12-04",
-    "totalDays": 946,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 947,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "OKLO",
     "firstDate": "2021-07-08",
-    "lastDate": "2025-12-04",
-    "totalDays": 1109,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1110,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "MP",
     "firstDate": "2020-06-22",
-    "lastDate": "2025-12-04",
-    "totalDays": 1372,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1373,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "PATH",
     "firstDate": "2021-04-21",
-    "lastDate": "2025-12-04",
-    "totalDays": 1163,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1164,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "CRSP",
     "firstDate": "2016-10-19",
-    "lastDate": "2025-12-04",
-    "totalDays": 2295,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 2296,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "RKLB",
     "firstDate": "2020-11-24",
-    "lastDate": "2025-12-04",
-    "totalDays": 1263,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1264,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "IBM",
     "firstDate": "1980-01-02",
-    "lastDate": "2025-12-04",
-    "totalDays": 11577,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 11578,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "INTC",
     "firstDate": "1980-03-17",
-    "lastDate": "2025-12-04",
-    "totalDays": 11525,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 11526,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "GOOG",
     "firstDate": "2004-08-19",
-    "lastDate": "2025-12-04",
-    "totalDays": 5359,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 5360,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "QS",
     "firstDate": "2020-08-17",
-    "lastDate": "2025-12-04",
-    "totalDays": 1333,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1334,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "TSM",
     "firstDate": "1997-10-09",
-    "lastDate": "2025-12-04",
-    "totalDays": 7083,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 7084,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "PSTG",
     "firstDate": "2015-10-06",
-    "lastDate": "2025-12-04",
-    "totalDays": 2557,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 2558,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "RGTI",
     "firstDate": "2021-04-22",
-    "lastDate": "2025-12-04",
-    "totalDays": 1162,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1163,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "BEAM",
     "firstDate": "2020-02-06",
-    "lastDate": "2025-12-04",
-    "totalDays": 1466,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 1467,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "QCOM",
     "firstDate": "1991-12-13",
-    "lastDate": "2025-12-04",
-    "totalDays": 8555,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 8556,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "NEM",
     "firstDate": "1980-03-17",
-    "lastDate": "2025-12-04",
-    "totalDays": 11525,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 11526,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "NUE",
     "firstDate": "1980-03-17",
-    "lastDate": "2025-12-04",
-    "totalDays": 11525,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 11526,
+    "updated": "2025-12-06"
   },
   {
     "ticker": "UURAF",
     "firstDate": "2010-01-05",
-    "lastDate": "2025-12-04",
-    "totalDays": 4005,
-    "updated": "2025-12-05"
+    "lastDate": "2025-12-05",
+    "totalDays": 4006,
+    "updated": "2025-12-06"
   }
 ]
