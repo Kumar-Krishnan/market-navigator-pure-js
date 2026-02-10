@@ -8,7 +8,7 @@
   "file_type": "json",
   "order_by": "observation_date",
   "sort_order": "asc",
-  "count": 5240,
+  "count": 5245,
   "offset": 0,
   "limit": 100000,
   "observations": [
@@ -31451,6 +31451,36 @@
       "realtime_end": "2026-02-09",
       "date": "2026-01-30",
       "value": "117.8996"
+    },
+    {
+      "realtime_start": "2026-02-09",
+      "realtime_end": "2026-02-09",
+      "date": "2026-02-02",
+      "value": "118.3609"
+    },
+    {
+      "realtime_start": "2026-02-09",
+      "realtime_end": "2026-02-09",
+      "date": "2026-02-03",
+      "value": "117.9764"
+    },
+    {
+      "realtime_start": "2026-02-09",
+      "realtime_end": "2026-02-09",
+      "date": "2026-02-04",
+      "value": "118.2602"
+    },
+    {
+      "realtime_start": "2026-02-09",
+      "realtime_end": "2026-02-09",
+      "date": "2026-02-05",
+      "value": "118.5034"
+    },
+    {
+      "realtime_start": "2026-02-09",
+      "realtime_end": "2026-02-09",
+      "date": "2026-02-06",
+      "value": "118.2407"
     }
   ]
 }
