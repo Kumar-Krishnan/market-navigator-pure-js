@@ -8,7 +8,7 @@
   "file_type": "json",
   "order_by": "observation_date",
   "sort_order": "asc",
-  "count": 10489,
+  "count": 10490,
   "offset": 0,
   "limit": 100000,
   "observations": [
@@ -62945,6 +62945,12 @@
       "realtime_end": "2026-03-19",
       "date": "2026-03-17",
       "value": "6.05"
+    },
+    {
+      "realtime_start": "2026-03-19",
+      "realtime_end": "2026-03-19",
+      "date": "2026-03-18",
+      "value": "6.07"
     }
   ]
 }
